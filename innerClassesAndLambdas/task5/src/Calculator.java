@@ -2,28 +2,21 @@ public class Calculator {
     public DoMath toOperation(String op){
         DoMath res;
         switch (op) {
-            case "+": res= /* TODO */
-Use a lambda expression to set "res" to the correct function.
+            case "+": res= (o1, o2) -> o1 + o2;
             break;
-            case "-": res= /* TODO */
-Use a lambda expression to set "res" to the correct function.
+            case "-": res= (o1, o2) -> o1 - o2;
             break;
-            case "*": res= /* TODO */
-Use a lambda expression to set "res" to the correct function.
+            case "*": res= (o1, o2) -> o1 * o2;
             break;
-            case "/": res= /* TODO */
-Use a lambda expression to set "res" to the correct function. You must account for divisions by zero as specified in the instructions.
+            case "/": res= (o1, o2) ->  o2 == 0 ? Double.POSITIVE_INFINITY : o1/o2;
             break;
-            default: res= /* TODO */
-In the default value, the res function should return the minimun possible value.
+            default: res= (o1, o2) -> Double.MIN_VALUE;
         }
         return res;
     }
 
     public Double compute(Double n1, Double n2, String op){
-        DoMath calc = /* TODO */
-set calc to the correct function calling the method above.
-        return /* TODO */
-return the result of calc.compute with the numbers given.
+        DoMath calc = toOperation(op);
+        return calc.compute(n1, n2);
     }
 }
