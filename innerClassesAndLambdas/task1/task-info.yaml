@@ -78,7 +78,7 @@ files:
       offset: 0
     initialized_from_dependency: false
     selected: true
-    status: Unchecked
+    status: Solved
     encrypted_possible_answer: |-
       import java.time.LocalDate;
       import java.time.Period;
@@ -92,7 +92,7 @@ files:
       offset: 99
     initialized_from_dependency: false
     selected: false
-    status: Unchecked
+    status: Solved
     encrypted_possible_answer: public class Person {
   - offset: 77
     length: 59
@@ -104,12 +104,12 @@ files:
       offset: 132
     initialized_from_dependency: false
     selected: true
-    status: Unchecked
+    status: Solved
     encrypted_possible_answer: |-
       private String name;
           private LocalDate birthDate;
   - offset: 137
-    length: 398
+    length: 334
     placeholder_text: |-
       /* TODO */
       Create a member inner class called Position with two
@@ -120,7 +120,7 @@ files:
       offset: 272
     initialized_from_dependency: false
     selected: true
-    status: Unchecked
+    status: Solved
     encrypted_possible_answer: |-
       private class Position{
               String name;
@@ -135,8 +135,8 @@ files:
                   return name+":"+salary;
               }
           }
-  - offset: 541
-    length: 68
+  - offset: 471
+    length: 32
     placeholder_text: |-
       /* TODO */
       Create a member variable (of Person) of type Position.
@@ -145,10 +145,10 @@ files:
       offset: 444
     initialized_from_dependency: false
     selected: true
-    status: Unchecked
+    status: Solved
     encrypted_possible_answer: private Position position;
-  - offset: 616
-    length: 205
+  - offset: 503
+    length: 133
     placeholder_text: |-
       /* TODO */
       Create a constructor for Person that takes in two Strings. A name and a birthdate in ISO format (yyyy-mm-dd) and sets the corresponding memeber variables correctly
@@ -157,7 +157,7 @@ files:
       offset: 516
     initialized_from_dependency: false
     selected: true
-    status: Unchecked
+    status: Solved
     encrypted_possible_answer: |-
       /**
            * Creates a Person with a name and a birthdate.
@@ -168,8 +168,8 @@ files:
               this.name = name;
               this.birthDate = LocalDate.parse(birthDate);
           }
-  - offset: 826
-    length: 154
+  - offset: 636
+    length: 144
     placeholder_text: |-
       /* TODO */
       Create a getAge method that returns the age in years of this person. You need to use the Period class here.
@@ -178,13 +178,13 @@ files:
       offset: 696
     initialized_from_dependency: false
     selected: true
-    status: Unchecked
+    status: Solved
     encrypted_possible_answer: |
       public int getAge(){
               return -1*Period.between(LocalDate.now(),this.birthDate).getYears();
           }
-  - offset: 985
-    length: 156
+  - offset: 780
+    length: 114
     placeholder_text: |-
       /* TODO */
       Code the setPosition method. This should take one String and one double for the title and the salary respectively.
@@ -193,13 +193,13 @@ files:
       offset: 819
     initialized_from_dependency: false
     selected: true
-    status: Unchecked
+    status: Solved
     encrypted_possible_answer: |-
       public void setPosition(String name, double salary){
               this.position = new Position(name,salary);
           }
-  - offset: 1147
-    length: 38
+  - offset: 895
+    length: 68
     placeholder_text: |-
       /* TODO */
       A getter for position.
@@ -208,13 +208,13 @@ files:
       offset: 950
     initialized_from_dependency: false
     selected: true
-    status: Unchecked
+    status: Solved
     encrypted_possible_answer: |-
       public Position getPosition(){
               return this.position;
           }
-  - offset: 1191
-    length: 132
+  - offset: 963
+    length: 165
     placeholder_text: |-
       /* TODO */
       Override the toString() method to display the person's name, age and position (with salary and title).
@@ -223,13 +223,13 @@ files:
       offset: 989
     initialized_from_dependency: false
     selected: true
-    status: Unchecked
+    status: Solved
     encrypted_possible_answer: |-
       public String toString(){
               return name+" - "+getAge()+":"+this.position;
           }
-  - offset: 1323
-    length: 79
+  - offset: 1128
+    length: 1
     placeholder_text: |-
       /* TODO */
       Finish closing curly braces and the class.
@@ -238,7 +238,7 @@ files:
       offset: 1103
     initialized_from_dependency: false
     selected: true
-    status: Unchecked
+    status: Solved
     encrypted_possible_answer: '}'
   text: |
     /* TODO */
@@ -275,5 +275,8 @@ files:
     /* TODO */
     Finish closing curly braces and the class.
   learner_created: false
-status: Unchecked
+status: Solved
+feedback:
+  message: Congratulations!
+  time: Sun, 25 Apr 2021 16:27:21 UTC
 record: -1
